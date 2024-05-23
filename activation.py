@@ -16,7 +16,7 @@ class Tanh(Activation):
 
     @staticmethod
     def derivative(x: float) -> float:
-        return 1 - math.tanh(x) ** 2
+        return 1 - x ** 2
 
 class Logistic(Activation):  # Alias for sigmoid
     @staticmethod
